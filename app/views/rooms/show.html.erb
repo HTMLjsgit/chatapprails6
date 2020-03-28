@@ -1,0 +1,6 @@
+<div id="messages">
+    <%= render @messages %>
+</div>
+
+<%= text_field_tag :content, nil, data: {behavior: "room_speaker" } %>
+<%= hidden_field_tag :user_id, current_user.id %>
